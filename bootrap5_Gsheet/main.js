@@ -62,17 +62,22 @@ async function slide() {
     if (ind === 0) {
       ele += `
               <div class="carousel-item active">
-              <svg
-                class="bd-placeholder-img"
-                width="100%"
-                height="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <rect width="100%" height="100%" fill="#777" />
-              </svg>
+              <img src="${val[4]}" alt="" 
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+            >
+              // <svg
+              //   class="bd-placeholder-img"
+              //   width="100%"
+              //   height="100%"
+              //   xmlns="http://www.w3.org/2000/svg"
+              //   aria-hidden="true"
+              //   preserveAspectRatio="xMidYMid slice"
+              //   focusable="false"
+              // >
+              //  <rect width="100%" height="100%" fill="#777" />
+              //</svg>
 
               <div class="container">
                 <div class="carousel-caption text-start">
@@ -89,17 +94,22 @@ async function slide() {
     } else {
       ele += `
               <div class="carousel-item">
-              <svg
-                class="bd-placeholder-img"
+              <img src="${val[4]}" alt=""
+              class="bd-placeholder-img"
                 width="100%"
                 height="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
               >
-                <rect width="100%" height="100%" fill="#777" />
-              </svg>
+              // <svg
+              //   class="bd-placeholder-img"
+              //   width="100%"
+              //   height="100%"
+              //   xmlns="http://www.w3.org/2000/svg"
+              //   aria-hidden="true"
+              //   preserveAspectRatio="xMidYMid slice"
+              //   focusable="false"
+              // >
+              //   <rect width="100%" height="100%" fill="#777" />
+              // </svg>
 
               <div class="container">
                 <div class="carousel-caption text-start">
@@ -140,7 +150,7 @@ async function slide() {
 `;
     }
   }
-  console.log(eleSlide);
+  // console.log(eleSlide);
   elem.slideElem.innerHTML = ele;
   elem.slideBtn.innerHTML = eleSlide;
 }
@@ -150,21 +160,15 @@ async function marketing() {
     if (ind >= 0) {
       ele += `
             <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
+            <img src="${val[4]}" alt=""
+            class="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
-              aria-label="Placeholder: 140x140"
               preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>${val[0]}</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-
+              focusable="false" >
+            
             <h2>${val[1]}</h2>
             <p>
             ${val[2]}
@@ -186,34 +190,25 @@ async function futere() {
       ele += `
             <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">
+              <h3 class="featurette-heading">
               ${val[0]}
                 <span class="text-muted">${val[1]}</span>
-              </h2>
+              </h3>
               <p class="lead">
               ${val[2]}
               </p>
             </div>
             <div class="col-md-5">
-              <svg
-                class="
-                  bd-placeholder-img bd-placeholder-img-lg
-                  featurette-image
-                  img-fluid
-                  mx-auto
-                "
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>${val[1]}</title>
-                <rect width="100%" height="100%" fill="#eee" />
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-              </svg>
+            <img src="${val[4]}" alt=""
+            class="
+            bd-placeholder-img bd-placeholder-img-lg
+            featurette-image
+            img-fluid
+            mx-auto"
+          width="500"
+          height="500"
+            >
+              
             </div>
           </div>
 
@@ -233,25 +228,15 @@ async function futere() {
         </p>
       </div>
       <div class="col-md-5">
-        <svg
-          class="
-            bd-placeholder-img bd-placeholder-img-lg
-            featurette-image
-            img-fluid
-            mx-auto
-          "
-          width="500"
-          height="500"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>${val[1]}</title>
-          <rect width="100%" height="100%" fill="#eee" />
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
+      <img src="${val[4]}" alt=""
+      class="
+      bd-placeholder-img bd-placeholder-img-lg
+      featurette-image
+      img-fluid
+      mx-auto"
+      width="500"
+      height="500"
+      >
       </div>
     </div>
 
